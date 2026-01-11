@@ -1,0 +1,30 @@
+{
+    "name": "genosis",
+    "version": "1.0.0",
+    "description": "SPA using Squint and GenosDB",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paulrd/genosis.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/paulrd/genosis/issues"
+    },
+    "homepage": "https://github.com/paulrd/genosis#readme",
+    "dependencies": {
+        "squint-cljs": "^0.9.182",
+        "vite": "^7.3.1"
+    },
+    "scripts": {
+        "build:cljs": "squint compile",
+        "watch:cljs": "squint watch",
+        "dev": "vite",
+        "build": "squint compile && vite build"
+    }
+}
