@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sovereign DAG Node</title>
+    <script type="importmap">
+     {
+       "imports": {
+         "genosdb": "https://esm.sh/genosdb@latest",
+         "squint-cljs/core.js": "https://cdn.jsdelivr.net/npm/squint-cljs/core.js"
+       }
+     }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Connecting to Mesh...</h1>
+      <button id="add-node" style="display:none">Add Random Node</button>
+      <div id="graph-display"></div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

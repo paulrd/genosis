@@ -1,0 +1,48 @@
+* Genosis
+** Package
+  - run: npx vite build to get into a single optimized folder
+  - use html-inline-assets tool on dist/index.html.
+** Deploy
+  - Use github actions, I save the action yaml script as action.yaml.
+  - deploy single html page
+** Use Hot Module Reloading
+  - I have a custom vite plugin that does this.
+  - defonce for the genosdb state.
+** Replace Counter app weth GenosDB app
+  Once I have the deployment pipeline working, try a basic genosDB app. I save
+  the new html file as index2.html. The new cljs file that works with this is
+  main2.cljs.
+** package.json
+  - needs to launch both watcher and vite with one command
+  - maybe even the repl as well.
+  - replaced:
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+    "serve": "vite",
+** Questions to Ask Gemini
+  - Why do I need to tell vite about cljs files instead of js files. My watch
+    cljs seemed to be working just fine.
+  - How do I run html-inline-assets on the result? Is this equivalent to using
+    the vite plugin to create a single page?
+  - what is the .lsp/config.edn file doing?
+  - npx is no longer installed, so I can no longer run npx squint nrepl-server
+    :port 1888
+  - should I put this nrepl server command into package.json?
+  - How does HMR work? Is its sole purpose to be able to reload with breaking
+    the state of my app?
+  - How does the plugin for vite prevent the need for a separate watch process?
+  - I may want to ask about what my package.json should look like now such that
+    I can run: npm dev.
+  - what is the difference between npx and npm commands?
+  - what is Cypress and Playwright? Testing?
+  - Would you like me to show you how to structure your src/main.cljs so that it
+    works perfectly with this Vite setup? (Specifically, how to export your init
+    function so Vite can find it).
+** Learn Vite
+** Learn Squint
+** Learn JavaScript
+** Learn ClojureScript
+** Learn Github Actions
+  - deploy to single html file
+** Learn GenosDB
+** Learn Claude Code
+** Learn Github Copilot
